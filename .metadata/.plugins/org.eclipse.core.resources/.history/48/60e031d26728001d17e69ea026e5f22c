@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class FindWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Enter String: ");
+		String str = sc1.next();
+		System.out.println("Enter index: ");
+		int n = sc.nextInt();
+		
+		Pattern pattern = Pattern.compile("\\s");
+		String temp[] = pattern.split(str);
+		String result = "";
+		try {
+			if(!(n>temp.length)) {
+				result = temp[n];
+			}
+			System.out.println(result);
+			
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+		
+
+	}
+
+}

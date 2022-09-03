@@ -1,0 +1,13 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello \n Gopi..Welcome to the world of JAVA!");
+		int a = 74;
+		int b = 36;
+		System.out.println(a+b);
+
+	}
+
+}
